@@ -138,7 +138,7 @@ struct bigint{
         return *this;
     }
 
-    bigint operator / (const bigint& b) const{ //¨ú°Ó
+    bigint operator / (const bigint& b) const{
         if(*this < b) return bigint(0);
         else if(*this == b) return bigint(1);
         else{
